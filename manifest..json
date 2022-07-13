@@ -1,0 +1,28 @@
+{
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": ["copyform.user.js"],
+      "matches": ["\u003Call_urls>"],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Copies a form from right click menu allowing you to paste the values to a similar form.",
+  "icons": {
+    "128": "images/icon128.png",
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "64": "images/icon64.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnAQCIdbVwyMCCP189zPgnyhBRToOx2YQ2uX5FT8NsGAu1uhdxQZ+ZWPBBNMhJXphzg0KKT9iiSI+Sq8VvcnNnrLyZsOk0sjBzkxNKYREfw6OmE/u6J0j1+wvHro8K+dNzAnFj1AOCRg25O3PxcvpvaR6RwB8BPQTkl22nHO07+UWxm4pOgwsxj+mWvAMqtVWnXQmnvNgyt3q7ZCoHhvZqErextRyd07fBqLEUJX3C+4ktiHdFLZI9KTMnbOqFf37aqdSU63aWwCF73lkOvoeb9qfiMNN1fmI0v8WALgNJwHUD1f9zho96bp9kFlRos0sccWDpgL4bJ8X8Uo+r34KqQIDAQAB",
+  "manifest_version": 2,
+  "name": "Copy Form",
+  "permissions": ["\u003Call_urls>", "tabs", "storage", "contextMenus"],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "0.0.1.2"
+}

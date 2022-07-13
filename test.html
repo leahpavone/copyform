@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <title>CPYtest</title>
+    <script type="text/javascript">
+      function githid(elm) {
+        elm.innerHTML = "Get Hidden Value (" + elm.previousSibling.value + ")";
+      }
+
+      function didload() {
+        var hid = document.getElementById("hidElm1");
+        hid.value = Math.floor(Math.random() * 999);
+        hid.nextSibling.innerHTML = "Get Hidden Value (" + hid.value + ")";
+      }
+
+      function clearFrm() {
+        var elms = document.body.querySelectorAll(
+          "input[type=text],input[type=checkbox],select"
+        );
+        for (var e = 0, l = elms.length; e < l; e++) {
+          elms[e].value = "";
+          elms[e].checked = false;
+        }
+      }
+    </script>
+  </head>
+  <body onload="didload()">
+    <form method="post" action="">
+      <input
+        id="hidElm1"
+        name="id"
+        size="30"
+        type="hidden"
+        value="50"
+        style="display: block"
+      /><a href="#" onclick="githid(this)">Get Hidden Value</a><br />
+
+      firstName
+      <input
+        maxlength="30"
+        name="firstName"
+        size="30"
+        type="text"
+        value="Johnny"
+      /><br />
+      lastName
+      <input
+        maxlength="30"
+        name="lastName"
+        size="30"
+        type="text"
+        value="Five"
+      /><br />
+      lonecheck <input type="checkbox" name="lonecheck" /><br />
+      lonecheck2
+      <input type="checkbox" name="lonecheck2" checked="true" /><br />
+
+      select1
+      <select name="select1">
+        <option value="">-</option>
+        <option value="0">Zero</option>
+        <option value="1" selected="true">One</option>
+        <option value="2">Two</option></select
+      ><br />
+
+      <br />chkbx<br />
+      <input type="checkbox" name="chkbx" checked="true" />
+      <input type="checkbox" name="chkbx" />
+      <input type="checkbox" name="chkbx" checked="true" />
+      <input type="checkbox" name="chkbx" />
+      <input type="checkbox" name="chkbx" checked="true" />
+      <input type="checkbox" name="chkbx" />
+      <input type="checkbox" name="chkbx" checked="true" />
+      <input type="checkbox" name="chkbx" />
+      <input type="checkbox" name="chkbx" checked="true" />
+      <br /><br />
+
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="a"
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value=""
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="b"
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value=""
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="c"
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value=""
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="d"
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value=""
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="e"
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value=""
+      /><br />
+      friend[]
+      <input
+        maxlength="30"
+        name="friend[]"
+        size="30"
+        type="text"
+        value="f"
+      /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="button" onclick="clearFrm()" value="Clear" />
+    </form>
+  </body>
+</html>

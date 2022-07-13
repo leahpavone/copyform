@@ -1,0 +1,50 @@
+{
+  "file_hashes": [
+    {
+      "block_hashes": ["EKtVtJwqXIyFCkr+AE3olUfAFK4wQYdpDvm6dYGph7M="],
+      "block_size": 4096,
+      "path": "background.js"
+    },
+    {
+      "block_hashes": ["uerGjOu6oaRPsmFc3J1KqnnXoVuqGT/yuF7BARUD54o="],
+      "block_size": 4096,
+      "path": "copyform.user.js"
+    },
+    {
+      "block_hashes": ["gE4nMdY0whjT0aWqAucpwTQJmmtXWDl1oopheHaY1Jc="],
+      "block_size": 4096,
+      "path": "Cr_min.js"
+    },
+    {
+      "block_hashes": ["JFzS3kVjTpPZE5ur/66DsAohBRxnDeCUifx/H9WQi5E="],
+      "block_size": 4096,
+      "path": "images/icon112.png"
+    },
+    {
+      "block_hashes": ["sblWiPlZHTQ+zotUcNwE80vWFaNYz84ksqIyKQrnDTQ="],
+      "block_size": 4096,
+      "path": "images/icon19.png"
+    },
+    {
+      "block_hashes": ["nrwQwjdGw3/DY1Ywks+qkCzP5DoG6dkQo7vV+QdkARE="],
+      "block_size": 4096,
+      "path": "images/icon19_o.png"
+    },
+    {
+      "block_hashes": ["UG11zS7A1ceC3/Ll2ZMYOj3IQQi6fyLfBvC2l08AC7Y="],
+      "block_size": 4096,
+      "path": "images/Icon256.png"
+    },
+    {
+      "block_hashes": ["UPmtVSbG9P4Lcl3zPPeMAI/H/23EIapZjJrZ/usuyqE="],
+      "block_size": 4096,
+      "path": "images/icon38.png"
+    },
+    {
+      "block_hashes": ["pxb8XDhRE0TK7J7SMDoP26qMDfSl6wJ2O4BSdzVWbxY="],
+      "block_size": 4096,
+      "path": "test.html"
+    }
+  ],
+  "version": 2
+}
